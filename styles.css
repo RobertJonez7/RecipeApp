@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    min-height: 6em;
+    background-color: #FFC439;
+}
+
+main {
+    padding: 3em;
+    overflow-x: hidden;
+}
+
+#logo {
+    width: 5em;
+    height: auto;
+    margin: 2em;
+}
+
+#title {
+    font-size: 2em;
+}
+
+#todaysPicks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 5em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 16em;
+    height: 17em;
+    background-color: rgb(236, 236, 236);
+    margin: 1em;
+    cursor: pointer;
+}
+
+.card-pic {
+    width: 16em;
+    height: 13em;
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.subtitle {
+    font-size: 1.4em;
+}
+
+#cuisines {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 5em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+#random {
+    position: absolute;
+    right: 0;
+    margin-right: 3em;
+    justify-self: end;
+    padding: .8em;
+    background-color: rgb(83, 147, 199);
+    border: 0;
+    border-radius: .5em;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#random:hover {
+    background-color: rgb(40, 101, 151);
+}
+
+footer {
+    width: 100vw;
+    height: 5em;
+    background-color: #FFC439;
+}
+
+#recipe-head {
+    display: flex;
+    gap: 4em;
+    margin-bottom: 2em;
+}
+
+#recipe-title {
+    font-size: 1.4em;
+}
+
+#main-recipe {
+    margin-top: 2em;
+}
+
+#ingredients {
+    margin-top: 2em;
+}
+
+#instructions {
+    margin-top: 2em;
+}
