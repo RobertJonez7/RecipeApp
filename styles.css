@@ -30,6 +30,15 @@ main {
     font-size: 2em;
 }
 
+#banner {
+    width: 100vw;
+    height: 20em;
+    background-image: url('./assets/banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #todaysPicks {
     display: flex;
     flex-wrap: wrap;
@@ -66,6 +75,7 @@ main {
 #cuisines {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     min-height: 5em;
     margin-top: 1em;
@@ -91,8 +101,10 @@ main {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
     width: 100vw;
-    height: 5em;
+    height: 3em;
     background-color: #FFC439;
 }
 
@@ -120,4 +132,13 @@ footer {
 
 #cuisine-title {
     font-size: 2em;
+}
+
+#cuisine-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 5em;
+    margin-top: 1em;
+    margin-bottom: 3em;
 }

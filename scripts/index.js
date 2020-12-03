@@ -2,7 +2,7 @@ import { fetchData } from '../modules/fetchData.js';
 const API_KEY = '3326d2e61a474c328a9d0fe2d498ad72';
 
 window.onload = () => {
-    mapTodaysPicks();
+    //mapTodaysPicks();
     mapCuisines();
 
     document.getElementById("random").addEventListener("click", getRandomRecipe);
@@ -20,7 +20,7 @@ const cuisineArray = [
         image: 'assets/american.jpg'
     },
     {
-        title: "Latin American",
+        title: "Mexican",
         image: 'assets/latin-america.jpg'
     },
     {
@@ -42,13 +42,13 @@ const cuisineArray = [
 ];
 
 
-const mapTodaysPicks = async() => {
-    const data = await fetchData(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}`);
-    const todaysPicks = data.results.slice(0, 6);
-    document.getElementById('todaysPicks').innerHTML = todaysPicks.map(val => 
-        `<div class="card"><img src=${val.image} class="card-pic"><div class="card-title">${val.title}</div></div>`
-    ).join('');
-}
+// const mapTodaysPicks = async() => {
+//     const data = await fetchData(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}`);
+//     const todaysPicks = data.results.slice(0, 6);
+//     document.getElementById('todaysPicks').innerHTML = todaysPicks.map(val => 
+//         `<div class="card"><img src=${val.image} class="card-pic"><div class="card-title">${val.title}</div></div>`
+//     ).join('');
+// }
 
 const mapCuisines = () => {
     document.getElementById("cuisines").innerHTML = cuisineArray.map(val =>
