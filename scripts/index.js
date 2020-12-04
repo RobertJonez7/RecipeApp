@@ -2,10 +2,10 @@ import { fetchData } from '../modules/fetchData.js';
 const API_KEY = '3326d2e61a474c328a9d0fe2d498ad72';
 
 window.onload = () => {
-    //mapTodaysPicks();
     mapCuisines();
 
     document.getElementById("random").addEventListener("click", getRandomRecipe);
+    document.getElementById("search").addEventListener("click", activateSearch)
 
     const cards =  Array.from(document.querySelectorAll('.card'));
     cards.forEach(element => {
@@ -42,14 +42,6 @@ const cuisineArray = [
 ];
 
 
-// const mapTodaysPicks = async() => {
-//     const data = await fetchData(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}`);
-//     const todaysPicks = data.results.slice(0, 6);
-//     document.getElementById('todaysPicks').innerHTML = todaysPicks.map(val => 
-//         `<div class="card"><img src=${val.image} class="card-pic"><div class="card-title">${val.title}</div></div>`
-//     ).join('');
-// }
-
 const mapCuisines = () => {
     document.getElementById("cuisines").innerHTML = cuisineArray.map(val =>
         `<div class="card" data-key=${val.title}><img src=${val.image} class="card-pic"><div class="card-title">${val.title}</div></div>`
@@ -65,5 +57,16 @@ const getRandomRecipe = async () => {
 const redirectPage = data => {
     localStorage.setItem("cuisine", JSON.stringify(data));
     window.location.href = 'Views/cuisine.html';
+}
+
+const activateSearch = () => {
+    const searchbar = document.getElementById("searchbar");
+    if(searchbar.style.visibility === 'visible')
+    {
+        searchbar.style.visibility = 'hidden';
+    }
+    else {
+        searchbar.style.visibility = 'visible';
+    }
 }
 

@@ -13,6 +13,10 @@ const mapItemsToScreen = async title => {
     
     const response = await fetchData(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&cuisine=${title}`);
     document.getElementById("cuisine-container").innerHTML = response.results.map(val =>
-        `<div class="card" data-key=${val.title}><img src=${val.image} class="card-pic"><div class="card-title">${val.title}</div></div>`
+        `<div class="card" data-key=${val.id}><img src=${val.image} class="card-pic"><div class="card-title">${val.title}</div></div>`
     ).join('');
+}
+
+const redirectPage = data => {
+    //console.log(data)
 }
