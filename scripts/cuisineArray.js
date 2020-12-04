@@ -1,28 +1,26 @@
-const cuisineArray = [
+export const cuisineArray = [
     {
         title: "American",
-        img: 'assets/american.jpg'
+        image: 'assets/american.jpg'
     },
     {
-        title: "Latin American",
-        img: 'assets/latin-america.jpg'
+        title: "Mexican",
+        image: 'assets/latin-america.jpg'
     },
     {
         title: "Italian",
-        img: 'assets/italian.jpg'
+        image: 'assets/italian.jpg'
     },
     {
         title: "Chinese",
-        img: 'assets/chinese.jpg'
+        image: 'assets/chinese.jpg'
     },
     {
         title: "Mediterranean",
-        img: 'assets/mediterranean.png'
+        image: 'assets/mediterranean.png'
     },
     {
         title: "Indian",
-        img: 'assets/indian.jpg'
+        image: 'assets/indian.jpg'
     },
 ];
-
-export default cuisineArray;

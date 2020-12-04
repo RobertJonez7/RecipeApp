@@ -7,6 +7,10 @@
     overflow-x: hidden;
 }
 
+body {
+    position: relative;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -138,7 +142,7 @@ main {
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100vw;
     height: 4em;
