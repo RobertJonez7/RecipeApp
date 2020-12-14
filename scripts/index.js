@@ -33,3 +33,4 @@ const activateSearch = () => {
     searchbar.style.visibility === 'visible' ? searchbar.style.visibility = 'hidden' : searchbar.style.visibility = 'visible';
 }
 
+

@@ -185,6 +185,21 @@ footer {
     margin-bottom: 3em;
 }
 
+.cr-img {
+    width: 20em;
+    height: auto;
+}
+
+#ingredient {
+    margin-top: 2em;
+}
+
+#main-recipecr {
+    margin-top: 2em;
+    width: 60em;
+    height: auto;
+}
+
 @media only screen and (max-width: 1000px) {
     #title {
         font-size: 1.5em;
@@ -212,7 +227,7 @@ footer {
         height: 2em;
         margin-right: 0;
         margin-left: 0;
-        margin-top: 5em;
+        margin-top: 11em;
         border: none;
     }
   }
